@@ -19,7 +19,7 @@ with col2:
     output_text_area = st.subheader("")
 
 # Setup Google Gemini Model
-genai.configure(api_key='AIzaSyDhQv87vgR9Yk2iHatdY07tV9Cl8D_afsY')
+genai.configure(api_key='')
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Initialize the webcam to capture video
