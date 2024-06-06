@@ -7,7 +7,7 @@ from cvzone.HandTrackingModule import HandDetector
 from PIL import Image
 
 st.set_page_config(layout='wide')
-st.image('math_header.jpg')
+st.image('math_header.png')
 
 col1, col2 = st.columns([2,1])
 with col1:
