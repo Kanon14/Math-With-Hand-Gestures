@@ -1,3 +1,4 @@
+import os
 import cvzone
 import cv2
 import numpy as np
@@ -19,7 +20,7 @@ with col2:
     output_text_area = st.subheader("")
 
 # Setup Google Gemini Model
-genai.configure(api_key='')
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Initialize the webcam to capture video
